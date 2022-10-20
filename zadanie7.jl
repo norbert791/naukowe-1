@@ -14,12 +14,12 @@ function main()
     base :: Float64 = 2.0
     f1 :: Float64 = fun1Prim(1.0)
     println("f1(1.0) == $f1")
-    println("n | h | f'(1.0) aprox. | |f'(1.0) - (f'(1.0) aprox)|")
+    println("n,h,1 + h,f'(1.0) aprox.,|f'(1.0) - (f'(1.0) aprox)|")
     for n in 0:54
         h :: Float64 = base^(-n)
         f2 :: Float64 = aproximateDerivative(fun1, 1.0, h)
         delta :: Float64 = abs(f1 - f2)
-        println("$n | $h | $f2 | $delta")
+        println("$n,$h,$(1.0 + h),$f2,$delta")
     end
 end
 

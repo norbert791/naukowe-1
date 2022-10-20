@@ -87,15 +87,15 @@ function main()
     d32 :: Float32 = scalarProductD(v32, w32)
     d64 :: Float64 = scalarProductD(v64, w64)
 
-    println("""Metoda | Typ float (l. bitów) | Wynik
-                A     |         32           | $a32
-                A     |         64           | $a64
-                B     |         32           | $b32
-                B     |         64           | $b64
-                C     |         32           | $c32
-                C     |         64           | $c64
-                D     |         32           | $d32
-                D     |         64           | $d64""")
+    println("""Metoda,Typ float (l. bitów),Wynik
+                A,32,$a32
+                A,64,$a64
+                B,32,$b32
+                B,64,$b64
+                C,32,$c32
+                C,64,$c64
+                D,32,$d32
+                D,64,$d64""")
 end
 
 main()

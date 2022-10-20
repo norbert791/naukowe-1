@@ -18,7 +18,6 @@ function question1()
         if temp - temp2 != comp
             return false
         end
-        println(temp)
     end
 
     return true
