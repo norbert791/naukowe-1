@@ -1,3 +1,7 @@
+/**
+ * @author Norbert Jaśniewicz
+*/
+
 #include <stdio.h>
 #include <float.h>
 
